@@ -43,7 +43,7 @@ function LandingPage() {
     setStatus((prev) => ({ ...prev, isAnalyzing: true, error: "" }));
     setParsedData(null);
     try {
-      const response = await fetch(`${API_URL}/parse/`, {
+      const response = await fetch(`${API_URL}/process-ai/`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text: userInput }),
