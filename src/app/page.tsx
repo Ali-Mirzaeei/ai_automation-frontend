@@ -1,12 +1,8 @@
-"use client";
+import LandingPage from "@/components/pages/landingPage";
+import React from "react";
 
-import LandingPage from "@/components/landingPage";
-import MainProvider from "@/core/providers/mainProvider";
-
-export default function Home() {
-  return (
-    <MainProvider>
-      <LandingPage />
-    </MainProvider>
-  );
+function Home() {
+  return <LandingPage />;
 }
+
+export default Home;
